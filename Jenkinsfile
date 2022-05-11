@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo Hello World'
+                sh 'building the codes'
             }
         }
  pipeline {
@@ -14,9 +14,3 @@ pipeline {
                 sh 'echo testing the codes'
              }
         }
- pipeline {
-    agent any
-    stages {
-        stage('deploy') {
-            steps {
-                sh 'echo deploying the codes'
