@@ -1,10 +1,10 @@
 pipeline {
     agent any
     tools {
-        tool name: 'maven3', type: 'maven'
-        tool name: 'Default', type: 'git'
-    }
-
+        tools {
+  maven 'maven3'
+}
+'
     stages {
         stage('Checkout') {
             steps {
