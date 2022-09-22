@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    tools {
-        tool name: 'Default', type: 'git'
-        maven 'maven3'
 }
    stages {
         stage('Git Checkout') {
