@@ -4,10 +4,10 @@ pipeline {
         tool name: 'Default', type: 'git'
         maven 'maven3'
     }
-    stages {
-        stage('SCM Checkout') {
+   stages {
+        stage('Git Checkout') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/bloomytech/samplemaven.git']]])
+                git branch: 'main', credentialsId: '3857d56c-4f3b-430d-b7b7-e08e21da9402', url: 'https://github.com/akandeae/Quality-life.git'
             }
         }
     stages {
