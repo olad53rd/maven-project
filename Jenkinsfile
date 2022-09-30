@@ -9,7 +9,7 @@ hostname
 date
 touch samplefile
 ls -l
-echo "devops training is not touch, this is easy"'''
+echo "devops training is not tough, this is easy"'''
             }
         }
         stage('compile') {
