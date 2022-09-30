@@ -2,16 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('My First Pipeline') {
-            steps {
-                sh '''pwd
-hostname
-date
-touch samplefile
-ls -l
-echo "devops training is not tough, this is easy"'''
-            }
-        }
         stage('compile') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/learndevops-083/samplemaven.git']]])
